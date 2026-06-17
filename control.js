@@ -5,10 +5,10 @@ set
 }
 from "./firebase.js";
 
-let running=false;
-let seconds=0;
+let running = false;
+let seconds = 0;
 
-let state={
+let state = {
 
 localTeam:"BOC",
 awayTeam:"RIV",
@@ -40,26 +40,26 @@ refreshViews();
 
 function refreshViews(){
 
-if(localScoreView)
-localScoreView.textContent=
+if(document.getElementById("localScoreView"))
+localScoreView.textContent =
 state.localScore;
 
-if(awayScoreView)
-awayScoreView.textContent=
+if(document.getElementById("awayScoreView"))
+awayScoreView.textContent =
 state.awayScore;
 
-if(addedView)
-addedView.textContent=
+if(document.getElementById("addedView"))
+addedView.textContent =
 state.addedTime;
 
 }
 
 function saveTeams(){
 
-state.localTeam=
+state.localTeam =
 localInput.value.toUpperCase();
 
-state.awayTeam=
+state.awayTeam =
 awayInput.value.toUpperCase();
 
 save();
@@ -67,36 +67,50 @@ save();
 }
 
 function localPlus(){
+
 state.localScore++;
+
 save();
+
 }
 
 function localMinus(){
-if(state.localScore>0)
+
+if(state.localScore > 0)
 state.localScore--;
+
 save();
+
 }
 
 function awayPlus(){
+
 state.awayScore++;
+
 save();
+
 }
 
 function awayMinus(){
-if(state.awayScore>0)
+
+if(state.awayScore > 0)
 state.awayScore--;
+
 save();
+
 }
 
 function toggleClock(){
-running=!running;
+
+running = !running;
+
 }
 
 function resetClock(){
 
-seconds=0;
+seconds = 0;
 
-state.clock="00:00";
+state.clock = "00:00";
 
 save();
 
@@ -104,7 +118,7 @@ save();
 
 function plus10(){
 
-seconds+=10;
+seconds += 10;
 
 saveClock();
 
@@ -112,7 +126,7 @@ saveClock();
 
 function minus10(){
 
-seconds=Math.max(0,seconds-10);
+seconds = Math.max(0, seconds - 10);
 
 saveClock();
 
@@ -120,7 +134,7 @@ saveClock();
 
 function setPeriod(value){
 
-state.period=value;
+state.period = value;
 
 save();
 
@@ -136,7 +150,7 @@ save();
 
 function addedMinus(){
 
-if(state.addedTime>0)
+if(state.addedTime > 0)
 state.addedTime--;
 
 save();
@@ -145,13 +159,13 @@ save();
 
 function saveClock(){
 
-let m=
-Math.floor(seconds/60);
+let m =
+Math.floor(seconds / 60);
 
-let s=
-seconds%60;
+let s =
+seconds % 60;
 
-state.clock=
+state.clock =
 String(m).padStart(2,"0")
 +
 ":"
@@ -176,25 +190,6 @@ document.addEventListener(
 "keydown",
 e=>{
 
-window.saveTeams = saveTeams;
-
-window.localPlus = localPlus;
-window.localMinus = localMinus;
-
-window.awayPlus = awayPlus;
-window.awayMinus = awayMinus;
-
-window.toggleClock = toggleClock;
-window.resetClock = resetClock;
-
-window.plus10 = plus10;
-window.minus10 = minus10;
-
-window.setPeriod = setPeriod;
-
-window.addedPlus = addedPlus;
-window.addedMinus = addedMinus;
-  
 if(!(e.ctrlKey && e.altKey))
 return;
 
@@ -263,3 +258,24 @@ break;
 }
 
 });
+
+/* HACER VISIBLES LAS FUNCIONES AL HTML */
+
+window.saveTeams = saveTeams;
+
+window.localPlus = localPlus;
+window.localMinus = localMinus;
+
+window.awayPlus = awayPlus;
+window.awayMinus = awayMinus;
+
+window.toggleClock = toggleClock;
+window.resetClock = resetClock;
+
+window.plus10 = plus10;
+window.minus10 = minus10;
+
+window.setPeriod = setPeriod;
+
+window.addedPlus = addedPlus;
+window.addedMinus = addedMinus;
