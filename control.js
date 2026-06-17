@@ -176,6 +176,25 @@ document.addEventListener(
 "keydown",
 e=>{
 
+window.saveTeams = saveTeams;
+
+window.localPlus = localPlus;
+window.localMinus = localMinus;
+
+window.awayPlus = awayPlus;
+window.awayMinus = awayMinus;
+
+window.toggleClock = toggleClock;
+window.resetClock = resetClock;
+
+window.plus10 = plus10;
+window.minus10 = minus10;
+
+window.setPeriod = setPeriod;
+
+window.addedPlus = addedPlus;
+window.addedMinus = addedMinus;
+  
 if(!(e.ctrlKey && e.altKey))
 return;
 
