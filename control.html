@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Control Marcador</title>
+<style>
+
+body{
+font-family:Arial,sans-serif;
+padding:20px;
+}
+
+button{
+padding:10px;
+margin:3px;
+font-size:16px;
+}
+
+input{
+font-size:18px;
+padding:5px;
+}
+
+.section{
+margin-bottom:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Control Marcador</h2>
+
+<div class="section">
+
+Local
+
+<input id="localInput" value="BOC">
+
+<br><br>
+
+Visitante
+
+<input id="awayInput" value="RIV">
+
+<button onclick="saveTeams()">
+Guardar Equipos
+</button>
+
+</div>
+
+<div class="section">
+
+<h3>Marcador</h3>
+
+<button onclick="localMinus()">-</button>
+<span id="localScoreView">0</span>
+<button onclick="localPlus()">+</button>
+
+&nbsp;&nbsp;&nbsp;
+
+<button onclick="awayMinus()">-</button>
+<span id="awayScoreView">0</span>
+<button onclick="awayPlus()">+</button>
+
+</div>
+
+<div class="section">
+
+<h3>Reloj</h3>
+
+<button onclick="toggleClock()">
+Play / Pausa
+</button>
+
+<button onclick="resetClock()">
+Reiniciar
+</button>
+
+<button onclick="minus10()">
+-10 seg
+</button>
+
+<button onclick="plus10()">
++10 seg
+</button>
+
+</div>
+
+<div class="section">
+
+<h3>Periodo</h3>
+
+<button onclick="setPeriod('1T')">1T</button>
+<button onclick="setPeriod('ET')">ET</button>
+<button onclick="setPeriod('2T')">2T</button>
+<button onclick="setPeriod('PR')">PR</button>
+<button onclick="setPeriod('PEN')">PEN</button>
+
+</div>
+
+<div class="section">
+
+<h3>Tiempo añadido</h3>
+
+<button onclick="addedMinus()">-</button>
+
+<span id="addedView">0</span>
+
+<button onclick="addedPlus()">+</button>
+
+</div>
+
+<script src="control.js"></script>
+
+</body>
+</html>

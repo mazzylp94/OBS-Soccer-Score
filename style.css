@@ -1,0 +1,141 @@
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    background:#00FF00;
+    overflow:hidden;
+}
+
+#container{
+    position:relative;
+    width:2065px;
+    height:178px;
+}
+
+#bg{
+    position:absolute;
+    left:0;
+    top:0;
+    width:2065px;
+    height:178px;
+}
+
+.team,
+.score,
+#clock,
+#period,
+#addedTime{
+
+    position:absolute;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    font-family:Arial Black, Arial, sans-serif;
+
+    line-height:1;
+    user-select:none;
+}
+
+/* EQUIPOS */
+
+.team{
+    font-size:120px;
+    color:black;
+    transform:translateY(-18px);
+}
+
+/* GOLES */
+
+.score{
+    font-size:120px;
+    color:white;
+    transform:translateY(-16px);
+}
+
+/* RELOJ */
+
+#clock{
+    font-size:120px;
+    color:white;
+    transform:translateY(-16px);
+}
+
+/* PERIODO */
+
+#period{
+    font-size:120px;
+    color:black;
+    transform:translateY(-18px);
+}
+
+/* AÑADIDO */
+
+#addedTime{
+
+    left:2075px;
+    top:0;
+
+    width:140px;
+    height:178px;
+
+    background:#ff1c1c;
+
+    color:white;
+    font-size:120px;
+    font-weight:900;
+
+    transform:translateY(-16px);
+}
+
+/* POSICIONES */
+
+#localTeam{
+    left:0;
+    top:0;
+    width:425px;
+    height:178px;
+}
+
+#localScore{
+    left:425px;
+    top:0;
+    width:195px;
+    height:178px;
+}
+
+/* +10 px a la derecha */
+
+#awayScore{
+    left:660px;
+    top:0;
+    width:195px;
+    height:178px;
+}
+
+/* +10 px a la derecha */
+
+#awayTeam{
+    left:830px;
+    top:0;
+    width:470px;
+    height:178px;
+}
+
+#clock{
+    left:1285px;
+    top:0;
+    width:480px;
+    height:178px;
+}
+
+#period{
+    left:1765px;
+    top:0;
+    width:300px;
+    height:178px;
+}
