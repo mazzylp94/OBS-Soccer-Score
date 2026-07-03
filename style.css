@@ -207,17 +207,17 @@ html,body{
 =========================== */
 
 #pl1{ left:255px; top:155px; }
-#pl2{ left:470px; top:96px; }
-#pl3{ left:550px; top:96px; }
-#pl4{ left:630px; top:96px; }
-#pl5{ left:710px; top:96px; }
+#pl2{ left:470px; top:155px; }
+#pl3{ left:550px; top:155px; }
+#pl4{ left:630px; top:155px; }
+#pl5{ left:710px; top:155px; }
 
 /* ===========================
    VISITANTE
 =========================== */
 
-#pa1{ left:1160px; top:96px; }
-#pa2{ left:1240px; top:96px; }
-#pa3{ left:1320px; top:96px; }
-#pa4{ left:1400px; top:96px; }
-#pa5{ left:1480px; top:96px; }
+#pa1{ left:1160px; top:155px; }
+#pa2{ left:1240px; top:155px; }
+#pa3{ left:1320px; top:155px; }
+#pa4{ left:1400px; top:155px; }
+#pa5{ left:1480px; top:155px; }
