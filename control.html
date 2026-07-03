@@ -110,6 +110,101 @@ Reiniciar
 
 <button onclick="addedPlus()">+</button>
 
+<div class="section">
+
+<h3>Penales</h3>
+
+<table>
+
+<tr>
+<th></th>
+<th>Gol</th>
+<th>Errado</th>
+<th>Borrar</th>
+</tr>
+
+<tr>
+<td><b>Local P1</b></td>
+<td><button onclick="setPenLocal(0,'G')">⚽</button></td>
+<td><button onclick="setPenLocal(0,'E')">❌</button></td>
+<td><button onclick="setPenLocal(0,'')">○</button></td>
+</tr>
+
+<tr>
+<td><b>Local P2</b></td>
+<td><button onclick="setPenLocal(1,'G')">⚽</button></td>
+<td><button onclick="setPenLocal(1,'E')">❌</button></td>
+<td><button onclick="setPenLocal(1,'')">○</button></td>
+</tr>
+
+<tr>
+<td><b>Local P3</b></td>
+<td><button onclick="setPenLocal(2,'G')">⚽</button></td>
+<td><button onclick="setPenLocal(2,'E')">❌</button></td>
+<td><button onclick="setPenLocal(2,'')">○</button></td>
+</tr>
+
+<tr>
+<td><b>Local P4</b></td>
+<td><button onclick="setPenLocal(3,'G')">⚽</button></td>
+<td><button onclick="setPenLocal(3,'E')">❌</button></td>
+<td><button onclick="setPenLocal(3,'')">○</button></td>
+</tr>
+
+<tr>
+<td><b>Local P5</b></td>
+<td><button onclick="setPenLocal(4,'G')">⚽</button></td>
+<td><button onclick="setPenLocal(4,'E')">❌</button></td>
+<td><button onclick="setPenLocal(4,'')">○</button></td>
+</tr>
+
+<tr><td colspan="4"><hr></td></tr>
+
+<tr>
+<td><b>Visitante P1</b></td>
+<td><button onclick="setPenAway(0,'G')">⚽</button></td>
+<td><button onclick="setPenAway(0,'E')">❌</button></td>
+<td><button onclick="setPenAway(0,'')">○</button></td>
+</tr>
+
+<tr>
+<td><b>Visitante P2</b></td>
+<td><button onclick="setPenAway(1,'G')">⚽</button></td>
+<td><button onclick="setPenAway(1,'E')">❌</button></td>
+<td><button onclick="setPenAway(1,'')">○</button></td>
+</tr>
+
+<tr>
+<td><b>Visitante P3</b></td>
+<td><button onclick="setPenAway(2,'G')">⚽</button></td>
+<td><button onclick="setPenAway(2,'E')">❌</button></td>
+<td><button onclick="setPenAway(2,'')">○</button></td>
+</tr>
+
+<tr>
+<td><b>Visitante P4</b></td>
+<td><button onclick="setPenAway(3,'G')">⚽</button></td>
+<td><button onclick="setPenAway(3,'E')">❌</button></td>
+<td><button onclick="setPenAway(3,'')">○</button></td>
+</tr>
+
+<tr>
+<td><b>Visitante P5</b></td>
+<td><button onclick="setPenAway(4,'G')">⚽</button></td>
+<td><button onclick="setPenAway(4,'E')">❌</button></td>
+<td><button onclick="setPenAway(4,'')">○</button></td>
+</tr>
+
+</table>
+
+<br>
+
+<button onclick="resetPenalties()">
+Reiniciar Penales
+</button>
+
+</div>
+
 </div>
 
 <script type="module" src="control.js"></script>
