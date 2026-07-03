@@ -8,6 +8,10 @@ from "./firebase.js";
 let running = false;
 let seconds = 0;
 
+/* ===========================
+   ESTADO GENERAL
+=========================== */
+
 let state = {
 
 localTeam:"BOC",
@@ -20,12 +24,23 @@ clock:"00:00",
 
 period:"1T",
 
-addedTime:0
+addedTime:0,
+
+/* ===========================
+   PENALES
+=========================== */
+
+penLocal:["","","","",""],
+penAway:["","","","",""]
 
 };
 
 save();
 refreshViews();
+
+/* ===========================
+   GUARDAR EN FIREBASE
+=========================== */
 
 function save(){
 
@@ -37,6 +52,10 @@ state
 refreshViews();
 
 }
+
+/* ===========================
+   REFRESH UI CONTROL
+=========================== */
 
 function refreshViews(){
 
@@ -54,6 +73,10 @@ state.addedTime;
 
 }
 
+/* ===========================
+   EQUIPOS
+=========================== */
+
 function saveTeams(){
 
 state.localTeam =
@@ -66,95 +89,54 @@ save();
 
 }
 
+/* ===========================
+   MARCADOR
+=========================== */
+
 function localPlus(){
-
 state.localScore++;
-
 save();
-
 }
 
 function localMinus(){
-
 if(state.localScore > 0)
 state.localScore--;
-
 save();
-
 }
 
 function awayPlus(){
-
 state.awayScore++;
-
 save();
-
 }
 
 function awayMinus(){
-
 if(state.awayScore > 0)
 state.awayScore--;
-
 save();
-
 }
 
+/* ===========================
+   RELOJ
+=========================== */
+
 function toggleClock(){
-
 running = !running;
-
 }
 
 function resetClock(){
-
 seconds = 0;
-
 state.clock = "00:00";
-
 save();
-
 }
 
 function plus10(){
-
 seconds += 10;
-
 saveClock();
-
 }
 
 function minus10(){
-
 seconds = Math.max(0, seconds - 10);
-
 saveClock();
-
-}
-
-function setPeriod(value){
-
-state.period = value;
-
-save();
-
-}
-
-function addedPlus(){
-
-state.addedTime++;
-
-save();
-
-}
-
-function addedMinus(){
-
-if(state.addedTime > 0)
-state.addedTime--;
-
-save();
-
 }
 
 function saveClock(){
@@ -176,6 +158,63 @@ save();
 
 }
 
+/* ===========================
+   PERIODO
+=========================== */
+
+function setPeriod(value){
+state.period = value;
+save();
+}
+
+/* ===========================
+   AÑADIDO
+=========================== */
+
+function addedPlus(){
+state.addedTime++;
+save();
+}
+
+function addedMinus(){
+if(state.addedTime > 0)
+state.addedTime--;
+save();
+}
+
+/* ===========================
+   PENALES
+=========================== */
+
+function setPenLocal(index,value){
+
+state.penLocal[index] = value;
+
+save();
+
+}
+
+function setPenAway(index,value){
+
+state.penAway[index] = value;
+
+save();
+
+}
+
+function resetPenalties(){
+
+state.penLocal = ["","","","",""];
+state.penAway = ["","","","",""];
+
+save();
+
+}
+
+/* ===========================
+   TIMER
+=========================== */
+
 setInterval(()=>{
 
 if(!running) return;
@@ -186,9 +225,11 @@ saveClock();
 
 },1000);
 
-document.addEventListener(
-"keydown",
-e=>{
+/* ===========================
+   TECLAS
+=========================== */
+
+document.addEventListener("keydown",(e)=>{
 
 if(!(e.ctrlKey && e.altKey))
 return;
@@ -259,7 +300,9 @@ break;
 
 });
 
-/* HACER VISIBLES LAS FUNCIONES AL HTML */
+/* ===========================
+   EXPONER FUNCIONES AL HTML
+=========================== */
 
 window.saveTeams = saveTeams;
 
@@ -279,3 +322,9 @@ window.setPeriod = setPeriod;
 
 window.addedPlus = addedPlus;
 window.addedMinus = addedMinus;
+
+/* PENALES */
+
+window.setPenLocal = setPenLocal;
+window.setPenAway = setPenAway;
+window.resetPenalties = resetPenalties;
