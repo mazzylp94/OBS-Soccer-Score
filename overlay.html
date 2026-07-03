@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
+
 <title>Overlay Marcador</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <div id="container">
+
+    <!-- MARCADOR PRINCIPAL -->
 
     <img id="bg" src="assets/marcador.png">
 
@@ -26,9 +33,36 @@
 
     <div id="addedTime">+4</div>
 
+    <!-- ===========================
+         PENALES
+    ============================ -->
+
+    <img id="penBg" src="assets/penales.png">
+
+    <div id="penalties">
+
+        <!-- LOCAL -->
+
+        <div id="pl1" class="pen"></div>
+        <div id="pl2" class="pen"></div>
+        <div id="pl3" class="pen"></div>
+        <div id="pl4" class="pen"></div>
+        <div id="pl5" class="pen"></div>
+
+        <!-- VISITANTE -->
+
+        <div id="pa1" class="pen"></div>
+        <div id="pa2" class="pen"></div>
+        <div id="pa3" class="pen"></div>
+        <div id="pa4" class="pen"></div>
+        <div id="pa5" class="pen"></div>
+
+    </div>
+
 </div>
 
 <script type="module" src="overlay.js"></script>
 
 </body>
+
 </html>
