@@ -211,6 +211,20 @@ save();
 
 }
 
+function markPen(team,index,value){
+
+if(team === "L"){
+state.penLocal[index] = value;
+}
+
+if(team === "A"){
+state.penAway[index] = value;
+}
+
+save();
+
+}
+
 /* ===========================
    TIMER
 =========================== */
@@ -328,3 +342,4 @@ window.addedMinus = addedMinus;
 window.setPenLocal = setPenLocal;
 window.setPenAway = setPenAway;
 window.resetPenalties = resetPenalties;
+window.markPen = markPen;
