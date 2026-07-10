@@ -84,17 +84,24 @@ html,body{
     left:2075px;
     top:0;
 
-    width:178px;
+    width:230px;      /* antes 178px */
     height:178px;
 
     background:#ff1c1c;
 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
     color:white;
-    font-size:80px;
+    font-size:120px;
+    font-family:Arial Black, Arial, sans-serif;
     font-weight:900;
 
     transform:translateY(-16px);
+
 }
+
 
 /* POSICIONES */
 
