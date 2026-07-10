@@ -155,3 +155,31 @@ penalties.style.display="none";
 }
 
 });
+
+/* ===========================
+   TARJETAS ROJAS
+=========================== */
+
+localRedCards.innerHTML = "";
+
+for(let i=0;i<data.localRedCards;i++){
+
+    let card=document.createElement("div");
+
+    card.className="redCard";
+
+    localRedCards.appendChild(card);
+
+}
+
+awayRedCards.innerHTML = "";
+
+for(let i=0;i<data.awayRedCards;i++){
+
+    let card=document.createElement("div");
+
+    card.className="redCard";
+
+    awayRedCards.appendChild(card);
+
+}
