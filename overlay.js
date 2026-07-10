@@ -58,15 +58,23 @@ data.period;
 
 if(data.addedTime > 0){
 
-addedTime.style.display="flex";
+    addedTime.style.display = "flex";
 
-addedTime.textContent=
-"+"+data.addedTime;
+    addedTime.textContent = "+" + data.addedTime;
 
-}
-else{
+    if(data.addedTime >= 10){
 
-addedTime.style.display="none";
+        addedTime.style.width = "260px";
+
+    }else{
+
+        addedTime.style.width = "180px";
+
+    }
+
+}else{
+
+    addedTime.style.display = "none";
 
 }
 
