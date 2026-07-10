@@ -88,6 +88,24 @@ localInput.value.toUpperCase();
 state.awayTeam =
 awayInput.value.toUpperCase();
 
+/* NOMBRES COMPLETOS */
+
+state.localFullTeam =
+localFullInput.value.trim();
+
+state.awayFullTeam =
+awayFullInput.value.trim();
+
+/* Si quedaron vacíos usa la abreviatura */
+
+if(state.localFullTeam=="")
+state.localFullTeam =
+state.localTeam;
+
+if(state.awayFullTeam=="")
+state.awayFullTeam =
+state.awayTeam;
+
 save();
 
 }
