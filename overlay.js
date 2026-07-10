@@ -24,6 +24,20 @@ data.localTeam;
 awayTeam.textContent =
 data.awayTeam;
 
+if(document.getElementById("penLocalName")){
+
+penLocalName.textContent =
+data.localFullTeam || data.localTeam;
+
+}
+
+if(document.getElementById("penAwayName")){
+
+penAwayName.textContent =
+data.awayFullTeam || data.awayTeam;
+
+}
+
 /* GOLES */
 
 localScore.textContent =
