@@ -77,35 +77,15 @@ html,body{
     transform:translateY(-18px);
 }
 
-/* TIEMPO AÑADIDO * /
+/* TIEMPO AÑADIDO */
 
 #addedTime{
 
     left:2075px;
     top:0;
 
+    width:180px;
     height:178px;
-    if(data.addedTime > 0){
-
-    addedTime.style.display = "flex";
-
-    addedTime.textContent = "+" + data.addedTime;
-
-    if(data.addedTime >= 10){
-
-        addedTime.style.width = "260px";
-
-    }else{
-
-        addedTime.style.width = "180px";
-
-    }
-
-}else{
-
-    addedTime.style.display = "none";
-
-}
 
     background:#ff1c1c;
 
@@ -121,7 +101,6 @@ html,body{
     transform:translateY(-16px);
 
 }
-
 
 /* POSICIONES */
 
