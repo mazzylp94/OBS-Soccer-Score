@@ -17,6 +17,9 @@ let state = {
 localTeam:"BOC",
 awayTeam:"RIV",
 
+localFullTeam:"Boca Juniors",
+awayFullTeam:"River Plate",
+
 localScore:0,
 awayScore:0,
 
