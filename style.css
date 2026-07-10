@@ -41,6 +41,18 @@ html,body{
 
     top:-18px;
 
+    #lr1{ left:24px; }
+    #lr2{ left:102px; }
+    #lr3{ left:180px; }
+    #lr4{ left:258px; }
+    #lr5{ left:336px; }
+
+    #ar1{ left:868px; }
+    #ar2{ left:950px; }
+    #ar3{ left:1032px; }
+    #ar4{ left:1114px; }
+    #ar5{ left:1196px; }
+    
 }
 
 /* TARJETA */
