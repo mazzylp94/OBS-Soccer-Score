@@ -154,7 +154,7 @@ penalties.style.display="none";
 
 }
 
-});
+
 
 /* ===========================
    TARJETAS ROJAS
@@ -183,3 +183,6 @@ for(let i=0;i<data.awayRedCards;i++){
     awayRedCards.appendChild(card);
 
 }
+
+
+});
