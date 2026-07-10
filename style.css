@@ -9,6 +9,9 @@ html,body{
 
 #container{
     position:relative;
+
+    top:100px;
+
     width:2065px;
     height:470px;
 }
