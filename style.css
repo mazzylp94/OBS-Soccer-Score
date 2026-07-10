@@ -84,8 +84,28 @@ html,body{
     left:2075px;
     top:0;
 
-    width:240px;      /* antes 178px */
     height:178px;
+    if(data.addedTime > 0){
+
+    addedTime.style.display = "flex";
+
+    addedTime.textContent = "+" + data.addedTime;
+
+    if(data.addedTime >= 10){
+
+        addedTime.style.width = "260px";
+
+    }else{
+
+        addedTime.style.width = "180px";
+
+    }
+
+}else{
+
+    addedTime.style.display = "none";
+
+}
 
     background:#ff1c1c;
 
