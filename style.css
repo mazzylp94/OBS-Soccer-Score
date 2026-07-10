@@ -14,6 +14,59 @@ html,body{
 }
 
 /* ===========================
+   TARJETAS ROJAS
+=========================== */
+
+.redCards{
+
+    position:absolute;
+
+    top:-70px;
+
+    display:flex;
+
+    gap:10px;
+
+    z-index:50;
+
+}
+
+/* LOCAL */
+
+#localRedCards{
+
+    left:127px;
+    width:637px;
+
+}
+
+/* VISITANTE */
+
+#awayRedCards{
+
+    left:1096px;
+    width:644px;
+
+}
+
+/* TARJETA */
+
+.redCard{
+
+    width:34px;
+    height:48px;
+
+    background:#d00000;
+
+    border-radius:3px;
+
+    border:2px solid #8b0000;
+
+    box-shadow:
+        2px 2px 5px rgba(0,0,0,.45);
+
+}
+/* ===========================
    MARCADOR PRINCIPAL
 =========================== */
 
