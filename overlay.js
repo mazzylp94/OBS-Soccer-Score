@@ -160,27 +160,13 @@ penalties.style.display="none";
    TARJETAS ROJAS
 =========================== */
 
-localRedCards.innerHTML = "";
+for(let i=1;i<=5;i++){
 
-for(let i=0;i<data.localRedCards;i++){
+    document.getElementById("lr"+i).style.display =
+        i<=data.localRedCards ? "block" : "none";
 
-    let card=document.createElement("div");
-
-    card.className="redCard";
-
-    localRedCards.appendChild(card);
-
-}
-
-awayRedCards.innerHTML = "";
-
-for(let i=0;i<data.awayRedCards;i++){
-
-    let card=document.createElement("div");
-
-    card.className="redCard";
-
-    awayRedCards.appendChild(card);
+    document.getElementById("ar"+i).style.display =
+        i<=data.awayRedCards ? "block" : "none";
 
 }
 
