@@ -76,6 +76,11 @@ if(document.getElementById("addedView"))
 addedView.textContent =
 state.addedTime;
 
+if(document.getElementById("localRedView"))
+    localRedView.textContent = state.localRedCards;
+
+if(document.getElementById("awayRedView"))
+    awayRedView.textContent = state.awayRedCards;
 }
 
 /* ===========================
