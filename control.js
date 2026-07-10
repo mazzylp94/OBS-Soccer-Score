@@ -29,6 +29,8 @@ period:"1T",
 
 addedTime:0,
 
+localRedCards:0,
+awayRedCards:0,
 /* ===========================
    PENALES
 =========================== */
