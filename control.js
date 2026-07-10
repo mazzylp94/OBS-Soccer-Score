@@ -206,6 +206,58 @@ save();
 }
 
 /* ===========================
+   TARJETAS ROJAS
+=========================== */
+
+function localRedPlus(){
+
+    if(state.localRedCards < 5){
+
+        state.localRedCards++;
+
+        save();
+
+    }
+
+}
+
+function localRedMinus(){
+
+    if(state.localRedCards > 0){
+
+        state.localRedCards--;
+
+        save();
+
+    }
+
+}
+
+function awayRedPlus(){
+
+    if(state.awayRedCards < 5){
+
+        state.awayRedCards++;
+
+        save();
+
+    }
+
+}
+
+function awayRedMinus(){
+
+    if(state.awayRedCards > 0){
+
+        state.awayRedCards--;
+
+        save();
+
+    }
+
+}
+
+/* ===========================
    PENALES
 =========================== */
 
