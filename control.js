@@ -412,6 +412,12 @@ window.setPeriod = setPeriod;
 window.addedPlus = addedPlus;
 window.addedMinus = addedMinus;
 
+window.localRedPlus = localRedPlus;
+window.localRedMinus = localRedMinus;
+
+window.awayRedPlus = awayRedPlus;
+window.awayRedMinus = awayRedMinus;
+
 /* PENALES */
 
 window.setPenLocal = setPenLocal;
