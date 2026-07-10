@@ -16,39 +16,30 @@ html,body{
     height:470px;
 }
 
-/* ===========================
+/* =================================
    TARJETAS ROJAS
-=========================== */
+================================= */
 
-.redCards{
+.redCard{
 
     position:absolute;
 
-    top:-70px;
+    width:34px;
+    height:48px;
 
-    display:flex;
+    background:#d10000;
 
-    gap:10px;
+    border:2px solid #890000;
 
-    z-index:50;
+    border-radius:3px;
 
-}
+    box-shadow:2px 2px 5px rgba(0,0,0,.35);
 
-/* LOCAL */
+    display:none;
 
-#localRedCards{
+    z-index:5;
 
-    left:127px;
-    width:637px;
-
-}
-
-/* VISITANTE */
-
-#awayRedCards{
-
-    left:1096px;
-    width:644px;
+    top:-18px;
 
 }
 
