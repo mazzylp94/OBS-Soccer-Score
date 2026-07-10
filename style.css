@@ -221,3 +221,47 @@ html,body{
 #pa3{ left:1373px; top:142.5px; }
 #pa4{ left:1466px; top:142.5px; }
 #pa5{ left:1559px; top:142.5px; }
+
+.penTeamName{
+
+    position:absolute;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:Arial Black, Arial, sans-serif;
+
+    font-size:62px;
+
+    color:white;
+
+    text-transform:uppercase;
+
+    user-select:none;
+
+}
+
+/* LOCAL */
+
+#penLocalName{
+
+    left:120px;
+    top:15px;
+
+    width:700px;
+    height:70px;
+
+}
+
+/* VISITANTE */
+
+#penAwayName{
+
+    left:1040px;
+    top:15px;
+
+    width:700px;
+    height:70px;
+
+}
