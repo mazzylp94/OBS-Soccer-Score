@@ -177,8 +177,8 @@ html,body{
 
     position:absolute;
 
-    width:60px;
-    height:60px;
+    width:65px;
+    height:65px;
 
     border-radius:50%;
 
@@ -206,7 +206,7 @@ html,body{
    LOCAL
 =========================== */
 
-#pl1{ left:240px; top:140px; }
+#pl1{ left:245px; top:145px; }
 #pl2{ left:470px; top:155px; }
 #pl3{ left:550px; top:155px; }
 #pl4{ left:630px; top:155px; }
