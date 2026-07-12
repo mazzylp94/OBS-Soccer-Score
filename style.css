@@ -60,21 +60,7 @@ html,body{
 #ar5{ left:1196px; }
 /* TARJETA */
 
-.redCard{
 
-    width:34px;
-    height:48px;
-
-    background:#d00000;
-
-    border-radius:3px;
-
-    border:2px solid #8b0000;
-
-    box-shadow:
-        2px 2px 5px rgba(0,0,0,.45);
-
-}
 /* ===========================
    MARCADOR PRINCIPAL
 =========================== */
