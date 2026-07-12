@@ -175,6 +175,14 @@ Math.floor(seconds / 60);
 let s =
 seconds % 60;
 
+function setClock(minute){
+
+    seconds = minute * 60;
+
+    saveClock();
+
+}
+
 state.clock =
 String(m).padStart(2,"0")
 +
@@ -411,6 +419,8 @@ window.resetClock = resetClock;
 
 window.plus10 = plus10;
 window.minus10 = minus10;
+
+window.setClock = setClock;
 
 window.setPeriod = setPeriod;
 
