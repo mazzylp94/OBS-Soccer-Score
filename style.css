@@ -37,9 +37,9 @@ html,body{
 
     display:none;
 
-    z-index:5;
+    z-index:-5;
 
-    top:-18px;
+    top:-28px;
 
 }
 
