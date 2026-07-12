@@ -183,6 +183,22 @@ function setClock(minute){
 
 }
 
+function plusMinute(){
+
+    seconds += 60;
+
+    saveClock();
+
+}
+
+function minusMinute(){
+
+    seconds = Math.max(0, seconds - 60);
+
+    saveClock();
+
+}
+
 state.clock =
 String(m).padStart(2,"0")
 +
@@ -421,6 +437,9 @@ window.plus10 = plus10;
 window.minus10 = minus10;
 
 window.setClock = setClock;
+
+window.plusMinute = plusMinute;
+window.minusMinute = minusMinute;
 
 window.setPeriod = setPeriod;
 
