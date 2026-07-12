@@ -169,11 +169,18 @@ saveClock();
 
 function saveClock(){
 
-let m =
-Math.floor(seconds / 60);
+    let m = Math.floor(seconds / 60);
 
-let s =
-seconds % 60;
+    let s = seconds % 60;
+
+    state.clock =
+        String(m).padStart(2,"0")
+        + ":"
+        + String(s).padStart(2,"0");
+
+    save();
+
+}
 
 function setClock(minute){
 
@@ -196,17 +203,6 @@ function minusMinute(){
     seconds = Math.max(0, seconds - 60);
 
     saveClock();
-
-}
-
-state.clock =
-String(m).padStart(2,"0")
-+
-":"
-+
-String(s).padStart(2,"0");
-
-save();
 
 }
 
